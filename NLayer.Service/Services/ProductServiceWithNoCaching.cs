@@ -12,11 +12,11 @@ using System.Threading.Tasks;
 
 namespace NLayer.Service.Services
 {
-    public class ProductService : Service<Product>, IProductService
+    public class ProductServiceWithNoCaching : Service<Product>, IProductService
     {
         private readonly IProductRepository _repository;
         private readonly IMapper _mapper;
-        public ProductService(IUnitOfWork unitOfWork, IGenericRepository<Product> genericRepository, IProductRepository repository, IMapper mapper) : base(unitOfWork, genericRepository)
+        public ProductServiceWithNoCaching(IUnitOfWork unitOfWork, IGenericRepository<Product> genericRepository, IProductRepository repository, IMapper mapper) : base(unitOfWork, genericRepository)
         {
             _repository = repository;
             _mapper = mapper;
