@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NLayer.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Repository.Seeds
 {
@@ -15,12 +10,12 @@ namespace NLayer.Repository.Seeds
         {
             builder.HasData(new Product
             {
-                Id =1,
+                Id = 1,
                 CategoryId = 1,
-                Price =100,
-                Stock =20,
-                CreateDate=DateTime.Now,
-                Name="Kalem1"
+                Price = 100,
+                Stock = 20,
+                CreateDate = DateTime.Now,
+                Name = "Kalem1"
             },
             new Product
             {
@@ -43,7 +38,7 @@ namespace NLayer.Repository.Seeds
              new Product
              {
                  Id = 4,
-                 CategoryId =2,
+                 CategoryId = 2,
                  Price = 150,
                  Stock = 20,
                  CreateDate = DateTime.Now,
